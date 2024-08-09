@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test</title>
-  </head>
-  <body>
-    <p id="test"></p>
-    <script>
-      /*let p= "Where Is Everyone Hiding ?"
-        document.getElementById("test").innerHTML=p;
-        document.getElementById("test").style.backgroundColor="red";
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test</title>
+</head>
+
+<body>
+  <p id="test"></p>
+  <script>
+    /*let p= "Where Is Everyone Hiding ?"
+      document.getElementById("test").innerHTML=p;
+      document.getElementById("test").style.backgroundColor="red";
+  */
+    const object = {
+      fn: "Kazuha",
+      ln: "3411",
+      age: 50,
+      newobj: {
+        id: 855351,
+        adress: "fgkjhk",
+      }
+    };
+    object.ln = "lmao"
+    //document.getElementById("test").innerHTML = object;
+    //document.getElementById("test").innerHTML = JSON.stringify(object);
+    //document.getElementById("test").innerHTML = JSON.stringify(object.fn + " " + object.ln +" " + object.newobj.adress);
+    //document.getElementById("test").innerHTML = JSON.stringify(object.newobj.adress);
+    //document.getElementById("test").innerHTML = JSON.stringify(object);
+    //Normal Function
+    /*function sum(a,b){
+      return a+b;
+    }
+    let result=sum(4,5);
+    document.getElementById("test").innerHTML = result;
     */
-      const object = {
-        fn: "Kazuha",
-        ln: "3411",
-        age: 50,
-        newobj:{
-            id:855351,
-            adress:"fgkjhk",
-        }
-      };
-      object.ln="lmao"
-      //document.getElementById("test").innerHTML = object;
-      //document.getElementById("test").innerHTML = JSON.stringify(object);
-      //document.getElementById("test").innerHTML = JSON.stringify(object.fn + " " + object.ln +" " + object.newobj.adress);
-      //document.getElementById("test").innerHTML = JSON.stringify(object.newobj.adress);
-      //document.getElementById("test").innerHTML = JSON.stringify(object);
-      //Normal Function
-      /*function sum(a,b){
-        return a+b;
+    /*ArrOW fUNCTION
+     const x=() => {
+       return "Hello From Arrow Function"
+     }
+     document.getElementById("test").innerHTML=x();
+   */
+    //Anoynomous Function
+    //type of check
+    function sum(a, b) {
+      if (typeof (a) == "number" && typeof (b) == "number") {
+
+        return a + b;
+      } else {
+        return "Please input number as value"
       }
-      let result=sum(4,5);
-      document.getElementById("test").innerHTML = result;
-      */
-     /*ArrOW fUNCTION
-      const x=() => {
-        return "Hello From Arrow Function"
-      }
-      document.getElementById("test").innerHTML=x();
-      */
-     //Anoynomous Function
-     
-    </script>
-  </body>
+    }
+  document.getElementById("test").innerHTML = sum(12,13);
+
+  </script>
+</body>
+
 </html>
