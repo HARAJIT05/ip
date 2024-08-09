@@ -9,11 +9,15 @@
 
 <body>
   <p id="test"></p>
-  <script>
+  <button onclick="document.getElementById('test').innerHTML=onClickEvent()">click Me</button>
+    <script>
     /*let p= "Where Is Everyone Hiding ?"
       document.getElementById("test").innerHTML=p;
       document.getElementById("test").style.backgroundColor="red";
   */
+ const onClickEvent=()=>{
+    return "Click Triggerd"
+  }
     const object = {
       fn: "Kazuha",
       ln: "3411",
