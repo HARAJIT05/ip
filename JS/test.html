@@ -21,6 +21,9 @@
       newobj: {
         id: 855351,
         adress: "fgkjhk",
+      },
+      fullnname:() =>{
+        return object.fn + " " + object.ln;
       }
     };
     object.ln = "lmao"
@@ -44,6 +47,8 @@
    */
     //Anoynomous Function
     //type of check
+    const copyObj={...object,fn: object.fullnname()}
+    console.log(copyObj)
     function sum(a, b) {
       if (typeof (a) == "number" && typeof (b) == "number") {
 
@@ -52,7 +57,7 @@
         return "Please input number as value"
       }
     }
-  document.getElementById("test").innerHTML = sum(12,13);
+  document.getElementById("test").innerHTML = sum();
 
   </script>
 </body>
