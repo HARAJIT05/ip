@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split</title>
+    
+    
+</head>
+<body>
+    <p id="demo1"><p>
+        <script>
+
+        const str="Hello World"
+        const strArr = str.split(" ")
+        for(let i=0;i<strArr.length;i++){
+            document.getElementById("demo1").innerHTML += strArr[i] + "<br>"
+        }
+        document.getElementById("demo2").innerHTML = JSON.stringify(strArr);
+
+        </script>
+</body>
+</html>
