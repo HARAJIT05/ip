@@ -1,0 +1,20 @@
+1. Let vs Var
+2. Asynchronas and synchronas
+3. json vs object
+4.key value
+5.Shallow copy vs deep copy
+6.Spread operator
+7.ICANN
+8.PUBLIC VS PRIVATE IP
+9.PROTOCOLS
+10.MAIN DOMAIN AND SUB DOMAIN
+11.PROTS 
+12.DNS
+13.WHOIS
+14.JSON.PARSE
+15.JSON.COPYOBJ
+16.STRUCTREDCLONE(OBJECT)
+17.UI & UX
+18. Waterfall Model and Agile
+19. SSR VS CSR
+20.ADVANTAGES OF NODEJS
